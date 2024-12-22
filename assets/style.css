@@ -9,8 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #fff;
-    background-color: #f4f4f4;
+    color: #F5F5DC;
+    background-color: #F5F5DC;
 }
 
 /* Colores inspirados en el mar (colores más oscuros) */
@@ -18,7 +18,7 @@ body {
     --azul-marino: #002d42; /* Azul marino más oscuro */
     --azul-claro: #004f6d;  /* Azul claro más oscuro */
     --verde-mar: #007f8d;   /* Verde mar más oscuro */
-    --beige: #e6e6e6;       /* Beige suave */
+    --beige: #F5F5DC;       /* Beige suave */
     --blanco: #ffffff;
 }
 
@@ -26,8 +26,8 @@ body {
 .topbar {
     background-color: var(--azul-claro); /* Color azul más oscuro */
     color: var(--blanco);
-    font-size: 14px;
-    padding: 8px 0;
+    font-size: 19px;
+    padding: 0px 0;
 }
 
 .topbar p {
@@ -36,26 +36,28 @@ body {
 
 /* Header */
 header {
-    background-color: var(--azul-marino);
+    background-color: var(--azul-claro);
     color: var(--blanco);
     padding: 10px 0;
     text-align: center;
 }
 
-header img {
-    max-width: 10px; /* Tamaño reducido del logo */
-    height: auto;
+.logo {
+    max-height: 100px; /* Ajusta la altura máxima del logo */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    display: block; /* Asegura que el logo se comporte como un bloque */
 }
 
 /* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro */
-    padding: 5px 15px; /* Espaciado interno reducido */
+    background-color: var(--azul-claro); /* Fondo más oscuro */
+    padding: 8px 15px; /* Espaciado interno reducido */
     border-radius: 10px; /* Esquinas redondeadas */
 }
 
 .navbar .navbar-nav {
-    font-size: 1rem; /* Tamaño de texto un poco más grande */
+    font-size: 1.1rem; /* Tamaño de texto un poco más grande */
     text-align: center;
 }
 
@@ -64,26 +66,23 @@ header img {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: var(--blanco);
+    color: var(--b);
     padding: 5px 10px; /* Padding reducido */
     transition: background-color 0.5s ease; /* Transición suave */
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    background-color: var(--azul-claro); /* Color de fondo al pasar el mouse */
+    background-color: var(--verde-mar); /* Color de fondo al pasar el mouse */
     color: var(--blanco);
 }
 
-/* Asegurarse de que el logo esté centrado verticalmente */
 header .container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;         /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
 }
 
-header img {
-    max-width: 180px; /* Tamaño incrementado del logo */
-    height: auto;
-}
 
 
 /* Sección Hero */
@@ -102,12 +101,15 @@ header img {
     transition: transform 2s ease, opacity 1.5s ease;
 }
 
-/* Resto del CSS */
-
-
-
 
 /* Sección Misión y Visión */
+
+.bg-mision-vision {
+    background-color: var(--beige); /* Usar el color verde mar */
+    color: var(--beige);
+    padding: 40px 0;
+}
+
 #mision-vision {
     background-color: var(--beige);
     padding: 50px 0;
@@ -117,39 +119,50 @@ header img {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-align: center;
+    color: var(--azul-claro);
 }
 
 #mision-vision .row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    line-height: 1.9;
+    color: var(--azul-claro);
 }
 
 #mision-vision .col-md-6 {
     padding: 10px;
 }
 
+
+
 #mision-vision h3 {
     font-size: 1.8rem;
-    color: var(--azul-marino);
+    color: var(--azul-claro);
 }
 
-#mision-vision p {
-    font-size: 1.1rem;
-    color: #666;
+#Mision-Vision p {
+    color: var(--azul-claro);
+    line-height: 1.8;
 }
+
+
 
 #mision-vision .row img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Elimina el margen inferior */
     object-fit: cover; /* Para asegurarnos de que las imágenes no se deformen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+
 }
 
 /* Formulario de contacto */
+
 .contact-form {
-    background-color: var(--blanco);
+    background-color: var(--azul-marino);
+    color: var(--beige);
     padding: 50px 0;
 }
 
@@ -157,6 +170,7 @@ header img {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
+    color: var(--beige);
 }
 
 .contact-form form {
@@ -166,20 +180,25 @@ header img {
 
 .contact-form .form-label {
     font-size: 1.1rem;
+    color: var(--beige);
+}
+
+#contacto .form-control {
+    background-color: var(--beige);
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    padding: 10px;
     color: var(--azul-marino);
 }
 
-.contact-form .form-control {
-    border: 2px solid var(--azul-claro);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
+#contacto .form-control::placeholder {
+    color: var(--azul-marino);
+    opacity: 0.7;
 }
 
 .contact-form button {
     background-color: var(--azul-marino);
-    color: var(--blanco);
+    color: var(--beige);
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -200,64 +219,79 @@ header img {
 #sobre-nosotros h2 {
     font-size: 2.5rem;
     text-align: center;
+    color: var(--azul-marino);
     margin-bottom: 30px;
 }
 
 #sobre-nosotros p {
-    font-size: 1.1rem;
-    text-align: center;
-    color: #666;
+    font-size: 1.3rem;
+    color: var(--azul-marino);
     margin-bottom: 30px;
 }
 
-.social-icons a {
-    color: var(--blanco);
-    background-color: var(--azul-marino);
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    border-radius: 5px;
+#sobre-nosotros .social-icons .btn {
     font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.social-icons a:hover {
-    background-color: var(--azul-claro);
+#sobre-nosotros .social-icons .btn i {
+    margin-right: 8px;
 }
 
 #sobre-nosotros img {
-    max-width: 40%;
+    width: 100%;
+    height: 550px;
     border-radius: 15px;
     margin-top: 20px;
+    max-width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
 }
 
 /* Footer */
 footer {
     background-color: var(--azul-marino);
     color: var(--blanco);
-    padding: 30px 0;
+    padding: 2% 0;
     text-align: center;
 }
 
-footer h4 {
-    font-size: 1.8rem;
+footer h5 {
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-footer p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+.footer-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.social-icons .btn {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons .btn:hover {
+    background-color: var(--azul-claro);
 }
 
 .footer-map {
     width: 100%;
     max-width: 800px;
-    height: 400px;
+    height: 150px;
     margin: 0 auto;
     border: 0;
 }
 
 .footer-container {
-    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Media Queries para Responsividad */

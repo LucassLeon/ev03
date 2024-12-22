@@ -17,7 +17,7 @@
 <!-- Header con logo y navegación -->
 <header class="bg-primary text-white text-center py-4">
     <div class="container d-flex align-items-center justify-content-between flex-column flex-md-row">
-        <img src="assets/logo.ico" alt="Pescadería Mar de Catapilco" class="img-fluid" style="height: 120px;"> <!-- Tamaño del logo ajustado -->
+        <img src="assets/logo.ico" alt="Pescadería Mar de Catapilco" class="img-fluid logo" style="height: 80px;"> <!-- Tamaño del logo ajustado -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -85,17 +85,17 @@
 
 
     <!-- Misión y Visión -->
-    <section id="mision-vision" class="py-5 bg-light">
+    <section id="mision-vision" class="py-5 bg-mision-vision text-white">
         <div class="container">
             <h2 class="text-center mb-4">Misión y Visión</h2>
             <div class="row">
                 <div class="col-md-6">
                     <h3>Misión</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod odio vitae purus consequat, nec consequat libero sagittis.</p>
+                    <p>Nuestra misión es proporcionar productos del mar frescos y de alta calidad, promoviendo prácticas de pesca sostenible y apoyando a las comunidades locales. Nos esforzamos por ofrecer un servicio excepcional a nuestros clientes, garantizando su satisfacción y bienestar.</p>
                 </div>
                 <div class="col-md-6">
                     <h3>Visión</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod odio vitae purus consequat, nec consequat libero sagittis.</p>
+                    <p>Ser reconocidos como la pescadería líder en la región, conocida por nuestra dedicación a la calidad, la sostenibilidad y la innovación. Aspiramos a expandir nuestra presencia y a ser un referente en la industria pesquera, contribuyendo positivamente al medio ambiente y a la sociedad.</p>
                 </div>
             </div>
             <div class="row">
@@ -109,7 +109,7 @@
                     <img src="assets/img-salmon1.jpg" class="img-fluid" alt="Pescado">
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/img-salmon2.jpg" class="img-fluid" alt="Equipo de trabajo">
+                    <img src="assets/img-pescador.jpg" class="img-fluid" alt="Pescado">
                 </div>
             </div>
         </div>
@@ -144,24 +144,42 @@
     </section>
 
     <!-- Sección sobre nosotros -->
-    <section id="sobre-nosotros" class="py-5 bg-light">
+    <section id="sobre-nosotros" class="py-5 bg-sobre-nosotros text-white">
         <div class="container text-center">
             <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula urna eu risus malesuada, sit amet dictum erat tristique.</p>
-            <div class="social-icons">
-                <a href="https://wa.me/123456789" class="btn btn-success">WhatsApp</a>
-                <a href="https://instagram.com/pescaderiamar" class="btn btn-danger">Instagram</a>
+            <p>En Pescadería Mar de Catapilco, nos dedicamos a ofrecer los productos del mar más frescos y de la más alta calidad. Con más de 20 años de experiencia, nos enorgullece ser una referencia en la comunidad, promoviendo prácticas de pesca sostenible y apoyando a los pescadores locales. Nuestro compromiso es brindar un servicio excepcional y garantizar la satisfacción de nuestros clientes.</p>
+            <div class="social-icons my-4">
+                <a href="https://wa.me/123456789" class="btn btn-success me-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/pescaderiamar" class="btn btn-danger me-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com/pescaderiamar" class="btn btn-primary">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
             </div>
-            <img src="assets/img-pescador.jpg" class="img-fluid mt-3" alt="Foto sobre nosotros">
+            <img src="assets/nosotros.jpg" class="img-fluid mt-3" alt="Foto sobre nosotros">
         </div>
     </section>
 
     <!-- Footer con mapa interactivo -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center footer-container">
-            <h4>Ubicación</h4>
+            <h5>Ubicación</h5>
             <!-- Aquí iría el mapa interactivo -->
             <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.6340383020522!2d-71.2772971429574!3d-32.56522255031838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689b219b6f532df%3A0x8fb49793799ddf4e!2sJos%C3%A9%20Mar%C3%ADa%20Mercado%20464%2C%20local%204%2C%202060000%20Zapallar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1734836996243!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="social-icons my-3">
+                <a href="https://wa.me/123456789" class="btn btn-outline-light me-2">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/pescaderiamar" class="btn btn-outline-light me-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/pescaderiamar" class="btn btn-outline-light">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
             <p>&copy; 2024 Pescadería Mar de Catapilco. Todos los derechos reservados.</p>
         </div>
     </footer>
