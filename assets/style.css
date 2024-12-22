@@ -248,11 +248,16 @@ footer p {
     margin-bottom: 20px;
 }
 
-footer .mapa {
-    width: 80%; /* Reducido el mapa */
-    height: 200px;
-    background-color: #ddd;
+.footer-map {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
     margin: 0 auto;
+    border: 0;
+}
+
+.footer-container {
+    padding: 20px 0;
 }
 
 /* Media Queries para Responsividad */
