@@ -158,6 +158,74 @@ header .container {
 
 }
 
+/* Sección Horario de Atención */
+#horario {
+    background-color: var(--beige); /* Cambia este color según tu preferencia */
+    color: var(--azul-marino);
+    padding: 50px 0;
+}
+
+
+#horario h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#horario p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#horario ul {
+    list-style: none;
+    padding: 0;
+}
+
+#horario ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Sección Productos y Servicios */
+#productos-servicios {
+    background-color: var(--azul-claro);
+    color: var(--beige);
+    padding: 50px 0;
+}
+
+#productos-servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#productos-servicios p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#productos-servicios .col-md-4 {
+    margin-bottom: 30px;
+}
+
+#productos-servicios img {
+    width: 100%;
+    height: 600px;
+    border-radius: 25px;
+    margin-bottom: 0; /* Elimina el margen inferior */
+    object-fit: cover; /* Para asegurarnos de que las imágenes no se deformen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+
+}
+
+#productos-servicios h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#productos-servicios p {
+    font-size: 1.2rem;
+}
+
 /* Formulario de contacto */
 
 .contact-form {
